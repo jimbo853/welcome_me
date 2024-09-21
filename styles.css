@@ -42,7 +42,7 @@ body {
   }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 100px) {
   body {
     background-size: 300%;
     background-position: center -65px;
