@@ -1,0 +1,56 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background: #009ce5 url(background.jpg) no-repeat fixed center;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#words {
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 30px;
+  color: #a2e48b;
+  text-align: center;
+}
+
+.wordblock {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@media all and (min-height: 450px) {
+  #logo {
+    margin-top: -100px;
+  }
+}
+
+@media all and (max-width: 100px) {
+  body {
+    background-size: 300%;
+    background-position: center -65px;
+  }
+}
+
+@media all and (min-height: 1000px) {
+  body {
+    background-position: center bottom;
+  }
+}
